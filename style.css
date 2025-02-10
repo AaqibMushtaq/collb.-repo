@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #f2f4f7;
+}
+.info-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+.info-div > h1 {
+  color: #0866ff;
+  font-size: 55px;
+}
+.info-div > h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
