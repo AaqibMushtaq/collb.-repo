@@ -1,3 +1,8 @@
+:root {
+  --primary-clr: #0866ff;
+  --heading-size: 55px;
+  --secondary-size: 28px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +14,14 @@ main {
 .info-div {
   display: flex;
   flex-direction: column;
-  padding: 10px 30px;
-}
-.info-div > h1 {
-  color: #0866ff;
-  font-size: 55px;
-}
-.info-div > h2 {
-  font-size: 28px;
-  font-weight: normal;
+
+  h1 {
+    color: var(--primary-clr);
+    font-size: var(--heading-size);
+  }
+
+  h2 {
+    font-size: var(--secondary-size);
+    font-weight: normal;
+  }
 }
