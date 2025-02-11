@@ -1,0 +1,27 @@
+:root {
+  --primary-clr: #0866ff;
+  --heading-size: 55px;
+  --secondary-size: 28px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #f2f4f7;
+}
+.info-div {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: var(--primary-clr);
+    font-size: var(--heading-size);
+  }
+
+  h2 {
+    font-size: var(--secondary-size);
+    font-weight: normal;
+  }
+}
