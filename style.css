@@ -11,7 +11,7 @@
 main {
   background-color: #f2f4f7;
 }
-.info-div {
+.left-side {
   display: flex;
   flex-direction: column;
 
@@ -20,8 +20,7 @@ main {
     font-size: var(--heading-size);
   }
 
-  h2 {
+  p {
     font-size: var(--secondary-size);
-    font-weight: normal;
   }
 }
