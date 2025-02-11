@@ -3,7 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --header: #0866ff;
+  --primary: 12px;
+  --secondry: 15px;
+  --content-clr: #ffffff;
+}
 body {
-  background: #fff;
+  background: #f0f2f5;
   color: #1c1e21;
+}
+h1 {
+  text-align: center;
+}
+main > h1 {
+  color: var(--header);
+  font-size: 55px;
+}
+main > content {
+  background: var(--content-clr);
 }
