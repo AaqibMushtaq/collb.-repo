@@ -12,14 +12,31 @@
 body {
   background: #f0f2f5;
   color: #1c1e21;
+  height: 100%;
 }
-h1 {
-  text-align: center;
-}
+
 main > h1 {
   color: var(--header);
   font-size: 55px;
+  text-align: center;
 }
 main > content {
   background: var(--content-clr);
+}
+.content {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+}
+.content-header {
+  background: var(--content-clr);
+  width: 432px;
+  text-align: center;
+}
+.content-header > h1 {
+  color: #1c1e21;
+}
+.content-header > p {
+  color: #606783;
+  padding-top: 8px;
 }
