@@ -7,7 +7,7 @@
   --header: #0866ff;
   --primary: 12px;
   --secondry: 15px;
-  --content-col0r: #ffffff;
+  --content-color: #ffffff;
   --border-color: #606783;
   --main-color: #1c1e21;
 }
@@ -25,7 +25,7 @@ main > h1 {
   margin-top: 26px;
 }
 .content-header {
-  background: var(--content-clr);
+  background: var(--content-color);
   width: 432px;
   text-align: center;
 }
