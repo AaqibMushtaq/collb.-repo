@@ -7,11 +7,12 @@
   --header: #0866ff;
   --primary: 12px;
   --secondry: 15px;
-  --content-clr: #ffffff;
+  --content-col0r: #ffffff;
+  --border-color: #606783;
+  --main-color: #1c1e21;
 }
 body {
   background: #f0f2f5;
-  color: #1c1e21;
   height: 100%;
 }
 
@@ -20,13 +21,8 @@ main > h1 {
   font-size: 55px;
   text-align: center;
 }
-main > content {
-  background: var(--content-clr);
-}
 .content {
   margin-top: 26px;
-  display: flex;
-  justify-content: center;
 }
 .content-header {
   background: var(--content-clr);
@@ -34,9 +30,22 @@ main > content {
   text-align: center;
 }
 .content-header > h1 {
-  color: #1c1e21;
+  color: var(--main-color);
 }
 .content-header > p {
-  color: #606783;
+  color: var(--border-color);
   padding-top: 8px;
+}
+.page-body {
+  display: flex;
+  justify-content: center;
+}
+.content-body {
+  width: 432px;
+  border-top: 1px solid var(--border-color);
+  background: #fff;
+}
+.page-body {
+  display: flex;
+  justify-content: center;
 }
