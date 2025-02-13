@@ -5,15 +5,14 @@
 }
 :root {
   --header: #0866ff;
-  --primary: 12px;
-  --secondry: 15px;
+  --m: 12px;
+  --L: 15px;
   --content-color: #ffffff;
   --border-color: #606783;
   --main-color: #1c1e21;
 }
 body {
   background: #f0f2f5;
-  height: 100%;
 }
 
 main > h1 {
