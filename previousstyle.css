@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header: #0866ff;
+  --m: 12px;
+  --L: 15px;
+  --content-color: #ffffff;
+  --primary-color: #606783;
+  --main-color: #1c1e21;
+  --background-color: #f0f2f5;
+}
+body {
+  background: var(--background-color);
+}
+
+.logo {
+  color: var(--header);
+  font-size: 55px;
+  text-align: center;
+}
+.content {
+  margin-top: 26px;
+}
+.content-header {
+  background: var(--content-color);
+  width: 432px;
+  text-align: center;
+}
+.content-header > h1 {
+  color: var(--main-color);
+}
+.content-header > p {
+  color: var(--primary);
+  margin-top: 8px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.signup-form {
+  border-top: 1px solid var(--primary-color);
+  background: #fff;
+  padding: 16px;
+  /* display: flex;
+  justify-content: space-around;*/
+}
+#first-name {
+  padding: 11px;
+  font-size: var(--m);
+  color: var(--primary-color);
+  border-radius: 6px;
+}
+#sur-name {
+  padding: 11px;
+  margin-left: 20px;
+  font-size: var(--m);
+  color: var(--primary-color);
+  border-radius: 6px;
+}
+/*#dob {
+  margin-top: 16px;
+  color: var(--primary-color);
+  font-size: var(--l);
+  font-weight: normal;
+}
+.dob-dropdown {
+  padding: 10px 30px;
+  font-size: var(--L);
+  margin-top: 10px;
+}*/
