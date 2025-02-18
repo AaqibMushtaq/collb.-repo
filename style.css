@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: helvetica, arial, sans-serif;
 }
 main {
   background-color: var(--secondary-background);
@@ -38,24 +39,27 @@ main {
   padding: 20px;
   border-radius: 5px;
   input {
-    width: 100%;
-    border: 1px black solid;
-    padding: 10px 5px;
+    width: 364px;
+    border: 1px rgba(0, 0, 0, 0.17) solid;
+    padding: 10px 20px;
     border-radius: 5px;
+    line-height: 2;
   }
 }
 .right-side > :nth-child(3) {
   background-color: var(--primary-color);
   padding: 16px 0;
   border: none;
+  font-weight: 700;
   color: var(--main-background);
   border-radius: 5px;
+  font-size: 19px;
 }
 .right-side > :nth-child(4) {
   text-decoration: none;
   color: var(--primary-color);
   text-align: center;
-  margin: 0 115px;
+  /* margin: 0 115px; */
 }
 .right-side > :nth-child(6) {
   background: var(--teritiary-background);
@@ -67,4 +71,6 @@ main {
 button > a {
   text-decoration: none;
   color: var(--main-background);
+  font-weight: 600;
+  font-size: 18px;
 }
