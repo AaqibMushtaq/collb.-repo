@@ -1,23 +1,133 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 :root {
-  --header: #0866ff;
-  --m: 12px;
-  --L: 15px;
-  --content-color: #ffffff;
-  --primary-color: #606783;
-  --main-color: #1c1e21;
-  --background-color: #f0f2f5;
+  --xl: 55px;
+  --l: 35px;
+  --m: 28px;
+  --primary-color: #0866ff;
+  --border-color: #ced0d4;
+  --main-background: #fff;
+  --primary-background-color: #f2f4f7;
+  --secondary-background-color: #e9ebee;
+  --teritiary-background: #42b72a;
 }
-body {
-  background: var(--background-color);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* login page(main page) */
+#index-main {
+  background-color: #f2f4f7;
+  font-family: helvetica, arial, sans-serif;
+}
+main {
+  background-color: var(--secondary-background);
+  display: flex;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  h1 {
+    color: var(--primary-color);
+    font-size: var(--xl);
+  }
+
+  p {
+    font-size: var(--l);
+  }
+}
+.right-side {
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 5px;
+  input {
+    width: 364px;
+    border: 1px rgba(0, 0, 0, 0.17) solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 2;
+  }
+}
+.right-side > :nth-child(3) {
+  background-color: var(--primary-color);
+  padding: 16px 0;
+  border: none;
+  font-weight: 700;
+  color: var(--main-background);
+  border-radius: 5px;
+  font-size: 19px;
+}
+.right-side > :nth-child(4) {
+  text-decoration: none;
+  color: var(--primary-color);
+  text-align: center;
+  /* margin: 0 115px; */
+}
+.right-side > :nth-child(6) {
+  background: var(--teritiary-background);
+  padding: 12px 15px;
+  border: none;
+  align-self: center;
+  border-radius: 6px;
+}
+button > a {
+  text-decoration: none;
+  color: var(--main-background);
+  font-weight: 600;
+  font-size: 18px;
 }
 
+/* login page (main page) end */
+
+/* header section of forget password */
+
+#forget-pass-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
 .logo {
-  color: var(--header);
-  font-size: 55px;
+  color: var(--primary-color);
+  font-size: var(--l);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  input {
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+  }
+  button {
+    background-color: var(--primary-color);
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}
+/* header section of forget password end */
+
+/* sing up for facebok */
+#Signup-container {
+  display: flex;
+}
+#Signup-logo {
+  color: var(--primary-color);
   text-align: center;
 }
+/* sing up for facebok end */
