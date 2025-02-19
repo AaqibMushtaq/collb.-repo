@@ -1,4 +1,10 @@
 :root {
+  --heading-size: 55px;
+  --secondary-size: 28px;
+  --l: 35px;
+  --primary-color: #1b74e4;
+  --border-color: #ced0d4;
+  --secondary-background-color: #e9ebee;
   --primary-color: #0866ff;
   --xl: 55px;
   --l: 28px;
@@ -10,6 +16,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+#index-main {
+  background-color: #f2f4f7;
+=======
   font-family: helvetica, arial, sans-serif;
 }
 main {
@@ -46,6 +57,45 @@ main {
     line-height: 2;
   }
 }
+
+
+/* header section */
+
+#forget-pass-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  color: var(--primary-color);
+  font-size: var(--l);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  input {
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+  }
+  button {
+    background-color: var(--primary-color);
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}
+/* header section end */
+
 .right-side > :nth-child(3) {
   background-color: var(--primary-color);
   padding: 16px 0;
