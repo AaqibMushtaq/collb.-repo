@@ -124,9 +124,7 @@ button > a {
 /* header section of forget password end */
 
 /* sing up for facebok */
-body {
-  background: var(--primary-background-color);
-}
+
 #Signup-container {
   display: flex;
   flex-direction: column;
@@ -143,6 +141,7 @@ body {
   border-radius: 7px 7px 0 0;
   border-bottom: 1px solid var(--signup-form-border);
   margin-top: 20px;
+  border: 2px solid red;
 }
 .signup-form > p {
   color: var(--signup-form-border);
