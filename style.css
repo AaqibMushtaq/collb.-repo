@@ -133,7 +133,6 @@ button > a {
 #Signup-logo {
   color: var(--primary-color);
   font-size: var(--xl);
-  align-self: center;
 }
 .signup-form {
   background: var(--main-background);
