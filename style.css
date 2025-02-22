@@ -127,3 +127,13 @@ button > a {
   }
 }
 /* header section of forget password end */
+
+/* sing up for facebok */
+#Signup-container {
+  display: flex;
+}
+#Signup-logo {
+  color: var(--primary-color);
+  text-align: center;
+}
+/* sing up for facebok end */
