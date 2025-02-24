@@ -3,26 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>facebook</title>
+    <title>Facebook – log in or sign up</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/facebook logo.svg"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <main id="index-main">
+    <main id="login-page-container">
       <div class="left-side">
         <h1>facebook</h1>
         <p>
-          Facebook helps you connect and share with the people in your life.
+          Facebook helps you connect and share <br />
+          with the people in your life.
         </p>
       </div>
       <div class="right-side">
         <input type="text" placeholder="Email address or phone number" />
         <input type="password" placeholder="password" />
-        <button type="submit">Log in</button>
-        <a href="forget-password.html">forgotten password?</a>
+        <button type="submit" id="login-btn">Log in</button>
+        <a href="forget-password.html" id="forget-password-link"
+          >forgotten password?</a
+        >
         <hr />
-        <button>
-          <a href="signup.html">Create new account</a>
-        </button>
+        <button id="sign-up-btn"><a href="">Create new account</a></button>
+
       </div>
     </main>
   </body>

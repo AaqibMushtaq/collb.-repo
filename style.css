@@ -8,8 +8,8 @@
   --main-background: #fff;
   --primary-background-color: #f2f4f7;
   --secondary-background-color: #e9ebee;
-  --teritiary-background: #42b72a;
   --quaternary-background-color: #f0f2f5;
+  --teritiary-background-color: #42b72a;
 }
 * {
   margin: 0;
@@ -18,26 +18,28 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 /* login page(main page) */
-#index-main {
-  background-color: #f2f4f7;
-  font-family: helvetica, arial, sans-serif;
-}
-main {
-  background-color: var(--secondary-background);
+
+#login-page-container {
+  background-color: var(--primary-background-color);
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 121px;
 }
+
 .left-side {
   display: flex;
   flex-direction: column;
-  width: 50%;
 
   h1 {
     color: var(--primary-color);
     font-size: var(--xl);
+    padding-bottom: 10px;
   }
 
   p {
-    font-size: var(--l);
+    font-size: var(--m);
   }
 }
 .right-side {
@@ -48,6 +50,7 @@ main {
   gap: 12px;
   padding: 20px;
   border-radius: 5px;
+
   input {
     width: 364px;
     border: 1px rgba(0, 0, 0, 0.17) solid;
@@ -55,8 +58,11 @@ main {
     border-radius: 5px;
     line-height: 2;
   }
+  hr {
+    margin: 15px 0;
+  }
 }
-.right-side > :nth-child(3) {
+#login-btn {
   background-color: var(--primary-color);
   padding: 16px 0;
   border: none;
@@ -65,13 +71,13 @@ main {
   border-radius: 5px;
   font-size: 19px;
 }
-.right-side > :nth-child(4) {
+#forget-password-link {
   text-decoration: none;
   color: var(--primary-color);
   text-align: center;
   /* margin: 0 115px; */
 }
-.right-side > :nth-child(6) {
+#sign-up-btn {
   background: var(--teritiary-background);
   padding: 12px 15px;
   border: none;
