@@ -4,9 +4,11 @@
   --m: 28px;
   --primary-color: #0866ff;
   --border-color: #ced0d4;
+  --primary-border: #606770;
   --main-background: #fff;
   --primary-background-color: #f2f4f7;
   --secondary-background-color: #e9ebee;
+  --quaternary-background-color: #f0f2f5;
   --teritiary-background-color: #42b72a;
 }
 * {
@@ -129,11 +131,41 @@ button > a {
 /* header section of forget password end */
 
 /* sing up for facebok */
+
 #Signup-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--quaternary-background-color);
 }
 #Signup-logo {
   color: var(--primary-color);
-  text-align: center;
+  font-size: var(--xl);
 }
-/* sing up for facebok end */
+.signup-heading {
+  background: var(--main-background);
+  text-align: center;
+  border-bottom: 1px solid var(--primary-border);
+  margin-top: 20px;
+  padding: 16px 90px;
+  p {
+    color: var(--primary-border);
+    margin-top: 6px;
+  }
+}
+/*.signup-form {
+  padding: 16px;
+  background: var(--main-background);
+}
+#first-name {
+  padding: 12px;
+  font-size: 15px;
+  margin-right: 5px;
+  border-radius: 6px;
+}
+#sur-name {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+}*/
+/* signup for facebok end */
