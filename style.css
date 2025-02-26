@@ -2,6 +2,7 @@
   --xl: 55px;
   --l: 35px;
   --m: 28px;
+  --xs: 15px;
   --primary-color: #0866ff;
   --border-color: #ced0d4;
   --primary-border: #606770;
@@ -153,19 +154,21 @@ button > a {
     margin-top: 6px;
   }
 }
-/*.signup-form {
+.signup-form {
   padding: 16px;
   background: var(--main-background);
 }
 #first-name {
   padding: 12px;
-  font-size: 15px;
+  font-size: var(--xs);
   margin-right: 5px;
   border-radius: 6px;
+  border: 1px solid var(--border-color);
 }
 #sur-name {
   padding: 12px;
-  font-size: 15px;
+  font-size: var(--xs);
   border-radius: 6px;
-}*/
+  border: 1px solid var(--border-color);
+}
 /* signup for facebok end */
