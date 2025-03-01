@@ -2,14 +2,12 @@
   --xl: 55px;
   --l: 35px;
   --m: 28px;
+  --xs: 15px;
   --s: 17px;
   --primary-color: #0866ff;
   --border-color: #ced0d4;
-<<<<<<< HEAD
-  --secondary-border-color: #dadde1;
-=======
   --primary-border: #606770;
->>>>>>> main
+  --secondary-border-color: #dadde1;
   --main-background: #fff;
   --primary-background-color: #f2f4f7;
   --secondary-background-color: #e9ebee;
@@ -165,19 +163,22 @@ button > a {
     margin-top: 6px;
   }
 }
-/*.signup-form {
+.signup-form {
   padding: 16px;
   background: var(--main-background);
 }
 #first-name {
   padding: 12px;
-  font-size: 15px;
-  margin-right: 5px;
+  font-size: var(--xs);
+  margin-right: 5px;    
   border-radius: 6px;
+  border: 1px solid var(--border-color);
+/*   use common style for inputs and if we need some additional styles then use nth child selector */
 }
-#sur-name {
+#surname {
   padding: 12px;
-  font-size: 15px;
+  font-size: var(--xs);
   border-radius: 6px;
-}*/
+  border: 1px solid var(--border-color);
+}
 /* signup for facebok end */
