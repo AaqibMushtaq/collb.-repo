@@ -167,18 +167,14 @@ button > a {
   padding: 16px;
   background: var(--main-background);
 }
-#first-name {
-  padding: 12px;
-  font-size: var(--xs);
-  margin-right: 5px;    
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-/*   use common style for inputs and if we need some additional styles then use nth child selector */
-}
-#surname {
+.username-field {
   padding: 12px;
   font-size: var(--xs);
   border-radius: 6px;
   border: 1px solid var(--border-color);
 }
+.signup-form:first-child {
+  margin-right: 5px;
+}
+
 /* signup for facebok end */
