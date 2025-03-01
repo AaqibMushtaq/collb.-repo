@@ -2,14 +2,22 @@
   --xl: 55px;
   --l: 35px;
   --m: 28px;
+  --s: 17px;
   --primary-color: #0866ff;
   --border-color: #ced0d4;
+<<<<<<< HEAD
+  --secondary-border-color: #dadde1;
+=======
   --primary-border: #606770;
+>>>>>>> main
   --main-background: #fff;
   --primary-background-color: #f2f4f7;
   --secondary-background-color: #e9ebee;
   --quaternary-background-color: #f0f2f5;
   --teritiary-background-color: #42b72a;
+  --primary-border-radius: 6px;
+  --secondary-border-radius: 8px;
+  --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
 }
 * {
   margin: 0;
@@ -40,6 +48,7 @@
 
   p {
     font-size: var(--m);
+    margin-bottom: 45px;
   }
 }
 .right-side {
@@ -49,17 +58,20 @@
   justify-content: space-between;
   gap: 12px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: var(--primary-border-radius);
+  box-shadow: var(--box-shadow);
 
   input {
     width: 364px;
     border: 1px rgba(0, 0, 0, 0.17) solid;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: var(--secondary-border-radius);
     line-height: 2;
+    font-size: 17px;
   }
   hr {
     margin: 15px 0;
+    border-color: var(--secondary-border-color);
   }
 }
 #login-btn {
@@ -68,21 +80,21 @@
   border: none;
   font-weight: 700;
   color: var(--main-background);
-  border-radius: 5px;
+  border-radius: var(--primary-border-radius);
   font-size: 19px;
 }
 #forget-password-link {
   text-decoration: none;
   color: var(--primary-color);
   text-align: center;
-  /* margin: 0 115px; */
+  margin-top: 10px;
 }
 #sign-up-btn {
-  background: var(--teritiary-background);
+  background: var(--teritiary-background-color);
   padding: 12px 15px;
   border: none;
   align-self: center;
-  border-radius: 6px;
+  border-radius: var(--primary-border-radius);
 }
 button > a {
   text-decoration: none;
