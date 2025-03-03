@@ -148,6 +148,10 @@ button > a {
   align-items: center;
   background: var(--quaternary-background-color);
 }
+.form-container {
+  border-radius: 10px;
+  background: var(--main-background);
+}
 #Signup-logo {
   color: var(--primary-color);
   font-size: var(--xl);
@@ -173,8 +177,15 @@ button > a {
   border-radius: 6px;
   border: 1px solid var(--border-color);
 }
-.signup-form:first-child {
-  margin-right: 5px;
+.signup-form input:nth-of-type(1) {
+  margin-right: 6px;
+}
+.dob-field {
+  margin-top: 14px;
+  p {
+    font-size: 12px;
+    color: var(--primary-border);
+  }
 }
 
 /* signup for facebok end */
