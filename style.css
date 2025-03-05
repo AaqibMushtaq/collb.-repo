@@ -1,11 +1,14 @@
 :root {
-  --xl: 55px;
-  --l: 35px;
-  --m: 28px;
+  --xxl: 55px;
+  --xl: 35px;
+  --l: 28px;
+  --m: 19px;
   --s: 17px;
   --primary-color: #0866ff;
+  --secondary-color: #1c1e21;
   --border-color: #ced0d4;
   --secondary-border-color: #dadde1;
+  --teritiary-border-color: #00000044;
   --primary-border: #606770;
   --main-background: #fff;
   --primary-background-color: #f2f4f7;
@@ -41,12 +44,12 @@
 
   h1 {
     color: var(--primary-color);
-    font-size: var(--xl);
+    font-size: var(--xxl);
     padding-bottom: 10px;
   }
 
   p {
-    font-size: var(--m);
+    font-size: var(--xl);
     margin-bottom: 45px;
   }
 }
@@ -62,11 +65,11 @@
 
   input {
     width: 364px;
-    border: 1px rgba(0, 0, 0, 0.17) solid;
+    border: 1px var(--teritiary-border-color) solid;
     padding: 10px 20px;
     border-radius: var(--secondary-border-radius);
     line-height: 2;
-    font-size: 17px;
+    font-size: var(--m);
   }
 }
 .bottom-border {
@@ -80,7 +83,7 @@
   font-weight: 700;
   color: var(--main-background);
   border-radius: var(--primary-border-radius);
-  font-size: 19px;
+  font-size: var(--m);
 }
 #forget-password-link {
   text-decoration: none;
@@ -99,7 +102,7 @@ button > a {
   text-decoration: none;
   color: var(--main-background);
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--s);
 }
 .create-page {
   text-align: center;
@@ -107,7 +110,7 @@ button > a {
 }
 .create-page > a {
   text-decoration: none;
-  color: #1c1e21;
+  color: var(--secondary-color);
   font-size: 14px;
   font-weight: 600;
 }
@@ -124,7 +127,7 @@ button > a {
 }
 .logo {
   color: var(--primary-color);
-  font-size: var(--l);
+  font-size: var(--xl);
 }
 .header-right {
   display: flex;
@@ -161,7 +164,7 @@ button > a {
 }
 #Signup-logo {
   color: var(--primary-color);
-  font-size: var(--xl);
+  font-size: var(--xxl);
 }
 .signup-heading {
   background: var(--main-background);
@@ -174,19 +177,5 @@ button > a {
     margin-top: 6px;
   }
 }
-/*.signup-form {
-  padding: 16px;
-  background: var(--main-background);
-}
-#first-name {
-  padding: 12px;
-  font-size: 15px;
-  margin-right: 5px;
-  border-radius: 6px;
-}
-#sur-name {
-  padding: 12px;
-  font-size: 15px;
-  border-radius: 6px;
-}*/
+
 /* signup for facebok end */
