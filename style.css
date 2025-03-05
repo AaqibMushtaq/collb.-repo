@@ -167,25 +167,28 @@ button > a {
     margin-top: 6px;
   }
 }
-.signup-form {
+form {
   padding: 16px;
   background: var(--main-background);
+  display: flex;
+  justify-content: center;
+  input {
+    border-radius: 6px;
+    line-height: 16px;
+    padding: 11px;
+    border: 1px solid var(--primary-background-color);
+  }
 }
-.username-field {
-  padding: 12px;
-  font-size: var(--xs);
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
+
+form :nth-child(2) {
+  margin-left: 8px;
 }
-.signup-form input:nth-of-type(1) {
-  margin-right: 6px;
-}
-.dob-field {
+/*.dob-field {
   margin-top: 14px;
   p {
     font-size: 12px;
     color: var(--primary-border);
   }
-}
+}*/
 
 /* signup for facebok end */
