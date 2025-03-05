@@ -7,8 +7,8 @@
   --primary-color: #0866ff;
   --secondary-color: #1c1e21;
   --border-color: #ced0d4;
+
   --secondary-border-color: #dadde1;
-  --primary-border: #606770;
   --primary-border: #606770;
   --secondary-border-color: #dadde1;
   --teritiary-border-color: #00000044;
@@ -157,13 +157,17 @@ button > a {
 }
 /* header section of forget password end */
 
-/* sing up for facebok */
+/* singup for facebok */
 
 #Signup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--quaternary-background-color);
+}
+.form-container {
+  border-radius: var(--primary-border-radius);
+  background: var(--main-background);
 }
 #Signup-logo {
   color: var(--primary-color);
@@ -176,26 +180,26 @@ button > a {
   margin-top: 20px;
   padding: 16px 90px;
   p {
-    color: var(--primary-border);
+    color: var(--primary-border-color);
     margin-top: 6px;
   }
 }
-.signup-form {
+form {
   padding: 16px;
   background: var(--main-background);
+  display: flex;
+  justify-content: center;
+  input {
+    border-radius: var(--primary-border-radius);
+    line-height: 16px;
+    padding: 11px;
+    border: 1px solid var(--border-color);
+    font-size: var(--xs);
+  }
 }
-#first-name {
-  padding: 12px;
-  font-size: var(--xs);
-  margin-right: 5px;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  /*   use common style for inputs and if we need some additional styles then use nth child selector */
+
+form :nth-child(1) {
+  margin-right: 8px;
+
 }
-#surname {
-  padding: 12px;
-  font-size: var(--xs);
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-}
-/* signup for facebok end */
+
