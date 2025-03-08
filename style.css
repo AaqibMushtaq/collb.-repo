@@ -4,15 +4,14 @@
   --l: 28px;
   --m: 19px;
   --s: 17px;
+  --xs: 12px;
   --primary-color: #0866ff;
   --secondary-color: #1c1e21;
+  --teritiary-color: #8a8d91;
   --border-color: #ced0d4;
-
-  --secondary-border-color: #dadde1;
-  --primary-border: #606770;
+  --primary-border-color: #606770;
   --secondary-border-color: #dadde1;
   --teritiary-border-color: #00000044;
-  --primary-border: #606770;
   --main-background: #fff;
   --primary-background-color: #f2f4f7;
   --secondary-background-color: #e9ebee;
@@ -110,6 +109,7 @@ button > a {
 .create-page {
   text-align: center;
   margin-top: 28px;
+  margin-bottom: 10px;
 }
 .create-page > a {
   text-decoration: none;
@@ -117,7 +117,30 @@ button > a {
   font-size: 14px;
   font-weight: 600;
 }
-
+footer {
+  padding: 30px 200px 0 191px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--teritiary-color);
+  font-size: var(--xs);
+}
+#footer-top > ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+#footer-mid {
+  color: var(--teritiary-color);
+  word-spacing: 15px;
+  font-size: var(--xs);
+  line-height: 1.6;
+}
+#footer-bottom {
+  font-size: var(--xs);
+  color: var(--teritiary-color);
+  margin: 20px 0;
+}
 /* login page (main page) end */
 
 /* header section of forget password */
@@ -157,17 +180,13 @@ button > a {
 }
 /* header section of forget password end */
 
-/* singup for facebok */
+/* sing up for facebok */
 
 #Signup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--quaternary-background-color);
-}
-.form-container {
-  border-radius: var(--primary-border-radius);
-  background: var(--main-background);
 }
 #Signup-logo {
   color: var(--primary-color);
@@ -186,7 +205,7 @@ button > a {
     font-size: var(--xs);
   }
 }
-form {
+.signup-form {
   padding: 16px;
   background: var(--main-background);
   display: flex;
