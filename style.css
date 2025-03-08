@@ -159,12 +159,14 @@ button > a {
 .signup-heading {
   background: var(--main-background);
   text-align: center;
-  border-bottom: 1px solid var(--primary-border);
+  border-bottom: 1px solid var(--primary-border-color);
   margin-top: 20px;
   padding: 16px 90px;
-  p {
+  h5 {
     color: var(--primary-border-color);
     margin-top: 6px;
+    font-weight: 400;
+    font-size: var(--xs);
   }
 }
 form {
@@ -172,6 +174,8 @@ form {
   background: var(--main-background);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 10px;
   input {
     border-radius: var(--primary-border-radius);
     line-height: 16px;
@@ -184,12 +188,20 @@ form {
 form :nth-child(1) {
   margin-right: 8px;
 }
-/*.dob-field {
-  margin-top: 14px;
-  p {
-    font-size: 12px;
-    color: var(--primary-border);
+.dob-field {
+  h5 {
+    font-weight: 400;
+    font-size: var(--xs);
+    color: var(--primary-border-color);
   }
-}*/
+  select {
+    margin-top: 6px;
+    padding: 10px 50px 10px 3px;
+    font-size: var(--xs);
+    margin-right: 18px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-border-color);
+  }
+}
 
 /* signup for facebok end */
