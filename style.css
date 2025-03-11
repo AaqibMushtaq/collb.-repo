@@ -237,7 +237,7 @@ form :nth-child(1) {
 
     padding: 10px 50px 10px 3px;
     font-size: var(--s);
-    margin-right: 30px;
+    margin-right: 10px;
     border-radius: var(--primary-border-radius);
     border: 1px solid var(--quaternary-border-color);
     color: var(--secondary-color);
@@ -256,7 +256,16 @@ form :nth-child(1) {
   border-radius: var(--primary-border-radius);
   color: var(--secondary-color);
   display: inline-block;
-  margin: 4px 14px 0 0;
+  margin: 4px 8px 0 0;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  input {
+    font-size: var(--s);
+  }
 }
 
 /* signup for facebok end */
