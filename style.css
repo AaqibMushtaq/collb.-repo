@@ -187,12 +187,17 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 26px;
+  margin-top: 24px;
   background: var(--quaternary-background-color);
   height: 100vh;
 }
 #Signup-logo {
   color: var(--primary-color);
   font-size: var(--xxl);
+}
+.form-container {
+  border-radius: var(--secondary-border-radius);
 }
 .signup-heading {
   background: var(--main-background);
@@ -235,7 +240,8 @@ form :nth-child(1) {
   select {
     margin-top: 6px;
 
-    padding: 10px 50px 10px 3px;
+    padding: 10px 64px 10px 3px;
+
     font-size: var(--s);
     margin-right: 10px;
     border-radius: var(--primary-border-radius);
@@ -249,7 +255,8 @@ form :nth-child(1) {
   color: var(--primary-border-color);
 }
 .Gender > label {
-  padding: 10px 50px 10px 10px;
+  padding: 10px 55px 10px 10px;
+
   border: 1px solid var(--quaternary-border-color);
   line-height: 16px;
   font-size: var(--s);
@@ -265,6 +272,44 @@ form :nth-child(1) {
 
   input {
     font-size: var(--s);
+  }
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 6px;
+  width: 428px;
+  font-size: var(--xs);
+  color: var(--primary-border-color);
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 38px;
+
+  .sign-up-btn {
+    background: var(--teritiary-background-color);
+    padding: 8px 50px;
+    border: none;
+    align-self: center;
+    border-radius: var(--primary-border-radius);
+    color: var(--main-background);
+    font-size: var(--m);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    font-size: var(--m);
   }
 }
 
